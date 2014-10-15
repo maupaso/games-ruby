@@ -1,0 +1,36 @@
+<div class="row">
+	<div class="text-justify col-md-6 col-sm-5 col-xs-12">
+		<p id="notice"><%= notice %></p>
+
+		<p>
+		  <strong>Name:</strong>
+		  <%= @game.name %>
+		</p>
+
+		<p>
+		  <strong>Category:</strong>
+		  <%= @game.category %>
+		</p>
+
+		<p class="long-string">
+		  <strong>ImageURL:</strong>
+		  <%= @game.imageURL %>
+		</p>
+
+		<p class="full-item">
+		  <strong>Description:</strong>
+		  <%= @game.description %>
+		</p>
+	</div>
+
+	<div class="col-md-6 col-sm-7 col-xs-12 full-item">
+		<img src="<%= @game.imageURL %>">
+	</div>
+</div>
+
+<div class="text-center">
+	<big><strong>
+		<%= link_to 'Edit', edit_game_path(@game) %> |
+		<%= link_to 'Back', games_path %>
+	</strong></big>
+</div>

@@ -1,0 +1,15 @@
+<div class="text-center">
+	<div class="full-item">
+		<h1> <%= @game.name %> </h1>
+		<h2> <%= @game.category %> </h2>
+		<div class="row">
+			<div class="col-md-6 col-sm-7 col-xs-12 ">
+				<img src="<%= @game.imageURL %>">
+			</div>
+
+			<div class="col-md-6 col-sm-5 col-xs-12 text-justify">
+				<p> <small> <%= @game.description %> </small></p>
+			</div>
+		</div>
+	</div>
+</div>

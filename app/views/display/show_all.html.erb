@@ -1,0 +1,16 @@
+<h1 class="text-center">Game List</h1>
+
+<div class="list-group text-center row">
+	<% @all_games.each do |game| %>
+
+		<div class="list-group-item game-item col-xs-12 col-sm-6 col-md-3" >
+			<h4 class="list-group-item-heading"> <%= game.name %> </h4>
+			<h5 class="list-group-item-heading"> <%= game.category %> </h5>
+			<div>
+				<a href="/show_game/<%=game.name%>"> <img src="<%= game.imageURL %>"> </a>
+				<p class="list-group-item-text"> <small> <%= game.description %> </small></p>
+			</div>
+		</div>
+
+	<% end %>
+</div>
